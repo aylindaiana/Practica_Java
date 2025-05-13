@@ -17,9 +17,24 @@ public class Asientos {
 				asientos[f][c]= 'L';
 			}
 		}
+		System.out.println("--------Sistema de Reservas--------");
 		while(bandera!=true) {
 			System.out.println("Ingreser Fila y Asiento a reservar");
 			System.out.print("Fila (entre 0 y 9)");
 			fila = teclado.nextInt();
+			
+			System.out.print("Asiento (entre 0 y 9)");
+			asiento = teclado.nextInt();
+			
+			if(asientos[fila][asiento]=='L') {
+				asientos[fila][asiento] = 'X';
+				System.out.print("El asiento se reservo correctamente.");
+			} else {
+				System.out.print("El asiento se encuentra ocupado. Por favor, Elija otro");
+			}
+			
+			System.out.print("¿Desea dinalizar con la reserva?");
+			///////////
+		}
 	}
 }
