@@ -11,6 +11,7 @@ public class Asientos {
 		//Scanner es para que por pantalla se pueda ingresar datos
 		Scanner teclado = new Scanner(System.in);
 		int fila, asiento;
+		String respuesta; 
 		
 		for(int f=0; f<10; f++) {
 			for(int c=0; c<10; c++) {
@@ -33,8 +34,14 @@ public class Asientos {
 				System.out.print("El asiento se encuentra ocupado. Por favor, Elija otro");
 			}
 			
-			System.out.print("¿Desea dinalizar con la reserva?");
+			System.out.print("¿Desea finalizar con la reserva?");
+			System.out.print("S: si; Cualquier letra: no.");
+			respuesta = teclado.next(); // guardo la respuesta
 			///////////
+			if(respuesta.equalsIgnoreCase("S")) { 
+			// como es string se usa equals, uso el ignorar el mayucula o minuscula
+				bandera=true;
+			}
 		}
 	}
 }
