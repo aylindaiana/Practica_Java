@@ -1,5 +1,6 @@
 # Practica_Java
 Ejercicios Aleatorios
 
-- Practica con poo
+- Ejercicio con POO
 - Fonobacci
+- Analisis de pasos.
